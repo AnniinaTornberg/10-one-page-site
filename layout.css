@@ -1,0 +1,180 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #333333;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.nav-bar {
+  background-color: black;
+  padding: 1rem;
+}
+.portfolio {
+  background-image: url(images/photo-1532555985931-0cd8773a663c.jpeg);
+  background-size: cover;
+  background-clip: border-box;
+  background-position-x: center;
+  background-position-y: center;
+  padding: 1rem;
+}
+.musta-tausta {
+  background-color: rgba(0, 0, 0, 0.667);
+  padding: 1rem;
+}
+.parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.parent > * {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: right;
+  padding: 1rem;
+}
+.parent .levea-vasen {
+  text-align: left;
+  flex-grow: 2;
+}
+.numerointi {
+  color: white;
+  list-style: decimal;
+  padding-left: 3rem;
+}
+
+.kortit {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.kortit h1 {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+.kortit card {
+  flex-grow: 1;
+  flex-basis: 100%;
+  background-color: white;
+  border: black;
+  border: solid;
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.kortit card p {
+  color: black;
+}
+.oranssi-teksti {
+  color: #b86a41;
+}
+ul li {
+  color: #c7ae90;
+}
+.nykyisyys,
+.tulevaisuus {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.nykyisyys > *,
+.tulevaisuus > * {
+  flex-grow: 2;
+  flex-basis: 100%;
+  order: 1;
+}
+.nykyisyys h1,
+.tulevaisuus h1 {
+  flex-basis: 100%;
+}
+.nykyisyys figure {
+  flex-grow: 1;
+  order: 2;
+}
+.tulevaisuus figure {
+  flex-grow: 1;
+}
+
+p {
+  color: white;
+}
+figure img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 20px;
+  color: #b86a41;
+  padding: 2rem;
+}
+.oikealle {
+  max-width: 35%;
+  float: right;
+  padding: 1rem;
+}
+.vasemmalle {
+  max-width: 30%;
+  float: left;
+  padding: 1rem;
+}
+form {
+  color: white;
+}
+.formfield label {
+  display: inline-block;
+  width: 25%;
+}
+.formfield input {
+  display: inline-block;
+  width: 70%;
+}
+footer {
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+@media only screen and (min-width: 426px) {
+  .kortit {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .kortit h1 {
+    flex-grow: 1;
+    flex-basis: 100%;
+  }
+  .kortit card {
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+  .nykyisyys,
+  .tulevaisuus {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .nykyisyys > *,
+  .tulevaisuus > * {
+    flex-grow: 2;
+    flex-basis: 0;
+    order: 1;
+  }
+  .nykyisyys h1,
+  .tulevaisuus h1 {
+    flex-basis: 100%;
+  }
+  .nykyisyys figure {
+    flex-grow: 1;
+    order: 2;
+  }
+  .tulevaisuus figure {
+    flex-grow: 1;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+}
